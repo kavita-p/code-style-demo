@@ -61,4 +61,4 @@ One of the major advantages of modern IDEs is that lots of them have support for
 
 ![Visual Studio Code showing a faded-out import name to indicate the imported package isn't used.](screenshot.png)
 
-can do so in plenty of other languages as well. You don't _have_ to use Visual Studio Code — I use it sometimes and not others — but it's worth checking if your current IDE has LSP support, and if not, considering whether you might want to switch to one that does.
+can do so both for other languages and in other IDEs as well. You don't _have_ to use Visual Studio Code — I use it sometimes and not others — but it's worth checking if your current IDE has LSP support, and if not, considering whether you might want to switch to one that does.
