@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "code-style-demo"
+version = "0.1.0"
+description = "Recommendations and demo for good coding discpline in Python."
+authors = ["Kavita <kavi.pdri@gmail.com>"]
+readme = "README.md"
+packages = [{include = "code_style_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.3"
+pre-commit = "^2.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
