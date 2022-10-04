@@ -51,7 +51,11 @@ The following steps can be run in the shell set up by `poetry shell`, or as one-
 7. Reset the git repo with `git reset --hard`.
 8. Here's the big one: run `pre-commit install` to set up git hook scripts. Then, add some throwaway comment to the demo file and try to commit it. You'll see that pre-commit runs all of the tools we've just used automatically. This will run on every changed file in a commit every time you try and make a commit. Pre-commit actively prevents you from messing this up, which makes it far easier to share work across machines and with collaborators.
 
-### On modern IDEs
+## Makefile shortcuts
+
+In my own projects, I have a makefile set up that runs the commands I need; this is particularly useful for flake8 because flake8 needs some configuration to be compatible with Black (for example, they disagree very slightly on acceptable line lengths), and also not to scan the virtual environment, and it's annoying to type `--extend-exclude=.venv --append-config=.flake8` every time.
+
+## On modern IDEs
 
 One of the major advantages of modern IDEs is that lots of them have support for LSP, aka "Language Server Protocol." LSP is a tool Microsoft made to make in-IDE language support work on multiple IDEs, so that the same tool that displays the following in Visual Studio Code:
 
