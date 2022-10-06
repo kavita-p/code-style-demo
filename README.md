@@ -53,7 +53,7 @@ The following steps can be run in the shell set up by `poetry shell`, or as one-
 
 ## Makefile shortcuts
 
-In my own projects, I have a makefile set up that runs the commands I need; this is particularly useful for flake8 because flake8 needs some configuration to be compatible with Black (for example, they disagree very slightly on acceptable line lengths), and also not to scan the virtual environment, and it's annoying to type `--extend-exclude=.venv --append-config=.flake8` every time.
+In my own projects, I have a makefile set up that runs the commands I need. This is, to some degree, not necessary, but I like having output for my tools so it's nice to attach some emojis to flake8 to match the output of Black.
 
 ## On modern IDEs
 

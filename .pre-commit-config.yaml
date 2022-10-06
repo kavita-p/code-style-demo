@@ -19,6 +19,6 @@ repos:
         name: flake8
         stages: [commit]
         language: system
-        entry: poetry run flake8 --extend-exclude=.venv --append-config=.flake8
+        entry: poetry run flake8
         types: [python]
         exclude: setup.py
