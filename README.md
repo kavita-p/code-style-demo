@@ -12,7 +12,7 @@ These are the tools and techniques I've been using to style the Wealth NextGen D
 
 A quick guide to Poetry commands:
 
-- `poetry init` will initialize a poetry project inside your current folder, allowing you to define dependencings interactively. It creates a `pyproject.toml` file which lists dependencies, both standard and dev-only.
+- `poetry init` will initialize a poetry project inside your current folder. It also allows you to define dependencies interactively if you want, though I typically find this more hassle than it's worth. It creates a `pyproject.toml` file which lists dependencies, both standard and dev-only.
 - `poetry add` followed by a package name installs the named package to the current project and updates `pyproject.toml` as necessary.
 - `poetry install` installs all dependencies listed in `pyproject.toml`.
 - `poetry shell` activates the virtual environment for the current project, allowing you to use command-line tools specific to the current virtual environment.
@@ -48,7 +48,7 @@ The following steps can be run in the shell set up by `poetry shell`, or as one-
 
 4. Look at the badly formatted string in `demo.py`. Then, run `black .` and see how `demo.py`'s text changes.
 5. Now look at the imports. Then run `isort .` to have isort sort them.
-6. Next, run `flake8 --extend-exclude=.venv` to lint the file, and observe the unused-imports errors you get. (You exclude the `.venv` folder for obvious reasons.)
+6. Next, run `flake8` to lint the file, and observe the unused-imports errors you get. (You can look at the `.flake8` file to see configuration info, but it's mostly set up to exclude the `.venv` file and to ignore a couple of other things for the sake of compatibility with Black.)
 7. Reset the git repo with `git reset --hard`.
 8. Here's the big one: run `pre-commit install` to set up git hook scripts. Then, add some throwaway comment to the demo file and try to commit it. You'll see that pre-commit runs all of the tools we've just used automatically. This will run on every changed file in a commit every time you try and make a commit. Pre-commit actively prevents you from messing this up, which makes it far easier to share work across machines and with collaborators.
 
