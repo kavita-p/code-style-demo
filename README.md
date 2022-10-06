@@ -7,6 +7,7 @@ These are the tools and techniques I've been using to style the Wealth NextGen D
 ### Poetry
 
 [Poetry](https://python-poetry.org/) is a package manager for Python that installs packages on a per-project basis, which is useful because it largely erases the need to deal with things like version number conflicts. (I think it's also faster than pip, but don't quote me on that.) You can install it with the following command:
+
 `curl -sSL https://install.python-poetry.org | python3 -`
 
 A quick guide to Poetry commands:
